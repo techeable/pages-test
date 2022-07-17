@@ -1,7 +1,7 @@
 import './style.css'
-import * as THREE from 'three'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
-import { Camera } from 'three';
+// import * as THREE from 'three'
+import * as THREE from 'https://unpkg.com/three@0.142.0/build/three.js'
+import { OrbitControls } from './lib/OrbitControls.js'
 
 function vec3(x,y,z){ return new THREE.Vector3(x,y,z); }
 function quat(axis, angle){ return new THREE.Quaternion().setFromAxisAngle(axis, angle); }
