@@ -8,7 +8,7 @@ module.exports = {
     output:
     {
         filename: 'bundle.[contenthash].js',
-        path: path.resolve(__dirname, '../dist'),
+        path: path.resolve(__dirname, '../dist')
     },
     devtool: 'source-map',
     plugins:
@@ -81,16 +81,6 @@ module.exports = {
                             outputPath: 'assets/fonts/'
                         }
                     }
-                ]
-            },
-
-            // Shaders
-            {
-                test: /\.(glsl|vs|fs|vert|frag)$/,
-                exclude: /node_modules/,
-                use: [
-                    'raw-loader',
-                    'glslify-loader'
                 ]
             }
         ]
